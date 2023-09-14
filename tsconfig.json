@@ -11,13 +11,12 @@
     "baseUrl": ".",
     "lib": ["es2015", "es2016", "es2017", "es2018", "dom"],
     "paths": {
-      "*": ["node_modules/*", "src/types/*"],
-      "@src/*": ["src/*"],
-      "@test/*": ["test/*"]
+      "*": ["node_modules/*", "src/types/*"]
     },
     "esModuleInterop": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "types": ["mocha"]
   },
-  "include": ["src/**/*", "test/**/*", "helpers/*"],
+  "include": ["src/**/*"],
   "exclude": ["node_modules", "dist"]
 }
