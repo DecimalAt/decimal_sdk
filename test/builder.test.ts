@@ -1,5 +1,6 @@
 import { expect } from "chai";
 import { operators } from "../src";
+import { builder } from "../src";
 
 type singleOperation =
   | operators.MathOperation
@@ -7,9 +8,10 @@ type singleOperation =
   | operators.RequestOperation
   | operators.StatOperation;
 
-describe("Simple Operator Logs", function () {
-  it("Print Operations", function () {
-    const job: singleOperation[] = [
+describe("Builder", function () {
+  it("Simple Build", function () {
+    let operationBuilder = new builder.Builder();
+    let job_break_down: singleOperation[] = [
       { operation: "Add", a: "1.2", b: "1.3", varName: "A" },
       { operation: "Sub", a: "3.2", b: { varName: "A" }, varName: "B" },
       { operation: "Mul", a: 10, b: { varName: "A" }, varName: "C" },
@@ -35,6 +37,12 @@ describe("Simple Operator Logs", function () {
         varName: "result",
       },
     ];
-    expect(job.length).gt(0); // no test, only compilation check
+
+    job_break_down.forEach((element) => {
+      operationBuilder.addOperation(element);
+    });
+
+    const job = operationBuilder.build();
+    expect(job.length).eq(job_break_down.length);
   });
 });
