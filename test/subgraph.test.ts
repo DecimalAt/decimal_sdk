@@ -1,7 +1,7 @@
 import { subgraph } from "../src";
 import { expect } from "chai";
 
-describe("Subgrapgh Testing", function () {
+describe("Subgrapgh Testing", function() {
   it("Fetch Via HTTP", async () => {
     const result = await subgraph.queryData(subgraph.queries.getJobs(1, 0));
     expect(result).to.have.key("data");
@@ -9,7 +9,7 @@ describe("Subgrapgh Testing", function () {
   });
 
   it("Fetch Jobs Structured Data", async () => {
-    const result = await subgraph.getJobs(5, 0);
+    const result = await subgraph.getJobs(1, 0);
     expect(result.length).to.eq(1);
   });
 
