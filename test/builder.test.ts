@@ -8,8 +8,8 @@ type singleOperation =
   | operators.RequestOperation
   | operators.StatOperation;
 
-describe("Builder", function () {
-  it("Simple Build", function () {
+describe("Builder", function() {
+  it("Simple Build", function() {
     let operationBuilder = new builder.Builder();
     let job_break_down: singleOperation[] = [
       { operation: "Add", a: "1.2", b: "1.3", varName: "A" },
@@ -46,7 +46,7 @@ describe("Builder", function () {
     expect(job.length).eq(job_break_down.length);
   });
 
-  it("Should Fail: for unknown variable", function () {
+  it("Should Fail: for unknown variable", function() {
     let operationBuilder = new builder.Builder();
     let job_break_down: singleOperation[] = [
       { operation: "Add", a: "2.1", b: "22.22", varName: "A" },
@@ -58,5 +58,19 @@ describe("Builder", function () {
       Error,
       "b is not present in the store",
     );
+  });
+
+  it("Add Jobs Sequentially", function() {
+    let job1: operators.MathOperation = { operation: "Add", a: "2.1", b: "22.22", varName: "A" };
+
+    let job2: operators.MathOperation = {
+      operation: "Sub",
+      a: "3.2",
+      b: { varName: "A" },
+      varName: "B",
+    };
+
+    const operationBuilder = new builder.Builder();
+    operationBuilder.addOperation(job1).addOperation(job2);
   });
 });
