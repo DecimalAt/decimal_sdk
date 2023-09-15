@@ -1,6 +1,6 @@
 import { Variable } from "./Base";
 
-type Data = "randomString" | "randomNumber";
+type Data = "randomString" | "randomNumber" | "randomBytes";
 
 export interface RandData extends Variable {
   operation: Data;

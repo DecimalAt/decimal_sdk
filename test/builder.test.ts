@@ -45,4 +45,18 @@ describe("Builder", function () {
     const job = operationBuilder.build();
     expect(job.length).eq(job_break_down.length);
   });
+
+  it("Should Fail: for unknown variable", function () {
+    let operationBuilder = new builder.Builder();
+    let job_break_down: singleOperation[] = [
+      { operation: "Add", a: "2.1", b: "22.22", varName: "A" },
+      { operation: "Sub", a: "123.121", b: { varName: "C" }, varName: "X" },
+    ];
+
+    operationBuilder.addOperation(job_break_down[0]);
+    expect(() => operationBuilder.addOperation(job_break_down[1])).to.throw(
+      Error,
+      "b is not present in the store",
+    );
+  });
 });

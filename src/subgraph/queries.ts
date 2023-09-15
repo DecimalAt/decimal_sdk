@@ -4,8 +4,14 @@ export const getJobs = (first: number, skip: number): string => {
   jobs(first: ${first.toString()}, skip: ${skip.toString()}) {
     id
     creator
+    params {
+      id
+      index
+      key
+      value
+    }
     paymentPerExecution
-    executions {
+    executions (orderBy: timestamp, orderDirection: desc) {
       id
       executor
       payment
@@ -33,7 +39,7 @@ export const getJobs = (first: number, skip: number): string => {
 export const getExecutions = (first: number, skip: number): string => {
   return `
 {
-  executions (first: ${first.toString()}, skip: ${skip.toString()}) {
+  executions (first: ${first.toString()}, skip: ${skip.toString()}, orderBy: timestamp, orderDirection: desc) {
     id,
     job {
       id

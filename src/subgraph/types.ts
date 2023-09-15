@@ -9,12 +9,19 @@ export enum JobStatus {
 
 export enum JobType {
   Price = "Price",
+  Unknown = "Unknown",
 }
 
 export enum Network {
   ArbitrumGoerli = "Arbitrum-Goerli",
 }
 
+export interface Param {
+  id: String;
+  index: number;
+  key: string;
+  value: string;
+}
 export interface Job {
   id: String;
   network: Network;
@@ -24,6 +31,7 @@ export interface Job {
   status: JobStatus;
   runsLeft: number;
   timeLeft: number; // in millisecond
+  param: Param[];
 }
 
 export interface Execution {
@@ -31,7 +39,7 @@ export interface Execution {
   jobId: String;
   network: Network;
   category: JobType;
-  data: () => string[];
+  data: string[];
   lastUpdated: number;
   transactionHash: string;
   creator: string;
