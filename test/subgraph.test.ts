@@ -8,14 +8,35 @@ describe("Subgrapgh Testing", function () {
     expect(result).to.not.have.key("error");
   });
 
-  it("Fetch Jobs Structured Data", async () => {
+  it("All Jobs", async () => {
     const result = await subgraph.getJobs(1, 0);
     expect(result.length).to.eq(1);
   });
 
-  it("Fetch Executions Structured Data", async () => {
+  it("All Feeds", async () => {
     const result = await subgraph.getExecutions(1, 0);
     expect(result.length).to.eq(1);
-    console.log(result[0].data);
+  });
+
+  it("Apollo Client: get jobs", async () => {
+    const apolloClient = subgraph.apollo.apolloClient;
+
+    // any instance of apolloClient created outside can be passed here to fetch result
+    const result = await subgraph.apollo.GET_JOBS(apolloClient, 1, 0);
+    const httpResult = await subgraph.getJobs(1, 0);
+
+    expect(result).to.deep.equal(httpResult);
+    // console to see the result
+  });
+
+  it("Apollo Client: get executions", async () => {
+    const apolloClient = subgraph.apollo.apolloClient;
+
+    // any instance of apolloClient created outside can be passed here to fetch result
+    const result = await subgraph.apollo.GET_EXECUTIONS(apolloClient, 1, 0);
+    const httpResult = await subgraph.getExecutions(1, 0);
+
+    expect(result).to.deep.equal(httpResult);
+    // console to see the result
   });
 });

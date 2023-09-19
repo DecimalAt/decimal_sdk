@@ -24,8 +24,10 @@
     "typescript": "^5.2.2"
   },
   "dependencies": {
+    "@apollo/client": "^3.8.4",
     "bignumber.js": "^9.1.2",
     "cross-fetch": "^4.0.0",
-    "ethers": "^6.7.1"
+    "ethers": "^6.7.1",
+    "graphql": "^16.8.1"
   }
 }
