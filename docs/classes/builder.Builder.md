@@ -33,7 +33,7 @@ Represent Builder, which is used to create a Job
 
 #### Defined in
 
-[builder/index.ts:30](https://github.com/DecimalAt/decimal_sdk/blob/6ba5e75/src/builder/index.ts#L30)
+[builder/index.ts:30](https://github.com/DecimalAt/decimal_sdk/blob/478694d/src/builder/index.ts#L30)
 
 ## Properties
 
@@ -43,9 +43,9 @@ Represent Builder, which is used to create a Job
 
 #### Defined in
 
-[builder/index.ts:26](https://github.com/DecimalAt/decimal_sdk/blob/6ba5e75/src/builder/index.ts#L26)
+[builder/index.ts:26](https://github.com/DecimalAt/decimal_sdk/blob/478694d/src/builder/index.ts#L26)
 
-___
+---
 
 ### varMap
 
@@ -53,7 +53,7 @@ ___
 
 #### Defined in
 
-[builder/index.ts:28](https://github.com/DecimalAt/decimal_sdk/blob/6ba5e75/src/builder/index.ts#L28)
+[builder/index.ts:28](https://github.com/DecimalAt/decimal_sdk/blob/478694d/src/builder/index.ts#L28)
 
 ## Methods
 
@@ -65,8 +65,8 @@ Add a new operation to the Job
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name | Type        |
+| :--- | :---------- |
 | `op` | `operation` |
 
 #### Returns
@@ -77,9 +77,9 @@ Builder - Instance of the builder
 
 #### Defined in
 
-[builder/index.ts:38](https://github.com/DecimalAt/decimal_sdk/blob/6ba5e75/src/builder/index.ts#L38)
+[builder/index.ts:38](https://github.com/DecimalAt/decimal_sdk/blob/478694d/src/builder/index.ts#L38)
 
-___
+---
 
 ### build
 
@@ -95,9 +95,9 @@ operations - Complete operation sequence
 
 #### Defined in
 
-[builder/index.ts:52](https://github.com/DecimalAt/decimal_sdk/blob/6ba5e75/src/builder/index.ts#L52)
+[builder/index.ts:52](https://github.com/DecimalAt/decimal_sdk/blob/478694d/src/builder/index.ts#L52)
 
-___
+---
 
 ### isVariable
 
@@ -105,8 +105,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name   | Type  |
+| :----- | :---- |
 | `data` | `any` |
 
 #### Returns
@@ -115,9 +115,9 @@ ___
 
 #### Defined in
 
-[builder/index.ts:122](https://github.com/DecimalAt/decimal_sdk/blob/6ba5e75/src/builder/index.ts#L122)
+[builder/index.ts:122](https://github.com/DecimalAt/decimal_sdk/blob/478694d/src/builder/index.ts#L122)
 
-___
+---
 
 ### isVariablePresentInStore
 
@@ -125,9 +125,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `a` | [`Variable`](../interfaces/operators.Variable.md) |
+| Name | Type                                              |
+| :--- | :------------------------------------------------ |
+| `a`  | [`Variable`](../interfaces/operators.Variable.md) |
 
 #### Returns
 
@@ -135,9 +135,9 @@ ___
 
 #### Defined in
 
-[builder/index.ts:118](https://github.com/DecimalAt/decimal_sdk/blob/6ba5e75/src/builder/index.ts#L118)
+[builder/index.ts:118](https://github.com/DecimalAt/decimal_sdk/blob/478694d/src/builder/index.ts#L118)
 
-___
+---
 
 ### verify
 
@@ -145,8 +145,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name | Type        |
+| :--- | :---------- |
 | `op` | `operation` |
 
 #### Returns
@@ -155,4 +155,4 @@ ___
 
 #### Defined in
 
-[builder/index.ts:56](https://github.com/DecimalAt/decimal_sdk/blob/6ba5e75/src/builder/index.ts#L56)
+[builder/index.ts:56](https://github.com/DecimalAt/decimal_sdk/blob/478694d/src/builder/index.ts#L56)

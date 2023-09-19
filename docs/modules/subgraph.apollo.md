@@ -12,8 +12,8 @@
 
 ### Functions
 
-- [GET\_EXECUTIONS](subgraph.apollo.md#get_executions)
-- [GET\_JOBS](subgraph.apollo.md#get_jobs)
+- [GET_EXECUTIONS](subgraph.apollo.md#get_executions)
+- [GET_JOBS](subgraph.apollo.md#get_jobs)
 
 ## Variables
 
@@ -21,50 +21,61 @@
 
 • `Const` **apolloClient**: `ApolloClient`<`NormalizedCacheObject`\>
 
+Sample instance of apollo client
+This instance connect to decimal testnet subgraph with InMemoryCache
+
 #### Defined in
 
-[subgraph/apollo.ts:13](https://github.com/DecimalAt/decimal_sdk/blob/6ba5e75/src/subgraph/apollo.ts#L13)
+[subgraph/apollo.ts:17](https://github.com/DecimalAt/decimal_sdk/blob/478694d/src/subgraph/apollo.ts#L17)
 
 ## Functions
 
-### GET\_EXECUTIONS
+### GET_EXECUTIONS
 
 ▸ **GET_EXECUTIONS**(`aplClient`, `first`, `skip`): `Promise`<`Execution`[]\>
 
+Get all executions
+
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `aplClient` | `ApolloClient`<`NormalizedCacheObject`\> |
-| `first` | `number` |
-| `skip` | `number` |
+| Name        | Type                                     | Description                               |
+| :---------- | :--------------------------------------- | :---------------------------------------- |
+| `aplClient` | `ApolloClient`<`NormalizedCacheObject`\> | Any instance of apollo client             |
+| `first`     | `number`                                 | number of executions to fetch             |
+| `skip`      | `number`                                 | number of executions to skip (pagination) |
 
 #### Returns
 
 `Promise`<`Execution`[]\>
 
+Execution - List of Executions
+
 #### Defined in
 
-[subgraph/apollo.ts:35](https://github.com/DecimalAt/decimal_sdk/blob/6ba5e75/src/subgraph/apollo.ts#L35)
+[subgraph/apollo.ts:53](https://github.com/DecimalAt/decimal_sdk/blob/478694d/src/subgraph/apollo.ts#L53)
 
-___
+---
 
-### GET\_JOBS
+### GET_JOBS
 
 ▸ **GET_JOBS**(`aplClient`, `first`, `skip`): `Promise`<`Job`[]\>
 
+Get all available jobs
+
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `aplClient` | `ApolloClient`<`NormalizedCacheObject`\> |
-| `first` | `number` |
-| `skip` | `number` |
+| Name        | Type                                     | Description                         |
+| :---------- | :--------------------------------------- | :---------------------------------- |
+| `aplClient` | `ApolloClient`<`NormalizedCacheObject`\> | Any instance of apollo client       |
+| `first`     | `number`                                 | number of jobs to fetch             |
+| `skip`      | `number`                                 | number of jobs to skip (pagination) |
 
 #### Returns
 
 `Promise`<`Job`[]\>
 
+Jobs - List of Jobs
+
 #### Defined in
 
-[subgraph/apollo.ts:22](https://github.com/DecimalAt/decimal_sdk/blob/6ba5e75/src/subgraph/apollo.ts#L22)
+[subgraph/apollo.ts:33](https://github.com/DecimalAt/decimal_sdk/blob/478694d/src/subgraph/apollo.ts#L33)

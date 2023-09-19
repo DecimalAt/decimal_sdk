@@ -28,9 +28,9 @@ This is used to add random data in the job
 
 #### Defined in
 
-[operators/Rand.ts:10](https://github.com/DecimalAt/decimal_sdk/blob/6ba5e75/src/operators/Rand.ts#L10)
+[operators/Rand.ts:10](https://github.com/DecimalAt/decimal_sdk/blob/478694d/src/operators/Rand.ts#L10)
 
-___
+---
 
 ### varName
 
@@ -42,4 +42,4 @@ ___
 
 #### Defined in
 
-[operators/Base.ts:5](https://github.com/DecimalAt/decimal_sdk/blob/6ba5e75/src/operators/Base.ts#L5)
+[operators/Base.ts:5](https://github.com/DecimalAt/decimal_sdk/blob/478694d/src/operators/Base.ts#L5)

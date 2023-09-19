@@ -24,4 +24,4 @@
 
 #### Defined in
 
-[builder/index.ts:11](https://github.com/DecimalAt/decimal_sdk/blob/6ba5e75/src/builder/index.ts#L11)
+[builder/index.ts:11](https://github.com/DecimalAt/decimal_sdk/blob/478694d/src/builder/index.ts#L11)

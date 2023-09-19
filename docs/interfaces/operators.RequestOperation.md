@@ -29,9 +29,9 @@ Represent HTTP Request
 
 #### Defined in
 
-[operators/Request.ts:9](https://github.com/DecimalAt/decimal_sdk/blob/6ba5e75/src/operators/Request.ts#L9)
+[operators/Request.ts:9](https://github.com/DecimalAt/decimal_sdk/blob/478694d/src/operators/Request.ts#L9)
 
-___
+---
 
 ### pathToData
 
@@ -39,9 +39,9 @@ ___
 
 #### Defined in
 
-[operators/Request.ts:11](https://github.com/DecimalAt/decimal_sdk/blob/6ba5e75/src/operators/Request.ts#L11)
+[operators/Request.ts:11](https://github.com/DecimalAt/decimal_sdk/blob/478694d/src/operators/Request.ts#L11)
 
-___
+---
 
 ### url
 
@@ -49,9 +49,9 @@ ___
 
 #### Defined in
 
-[operators/Request.ts:10](https://github.com/DecimalAt/decimal_sdk/blob/6ba5e75/src/operators/Request.ts#L10)
+[operators/Request.ts:10](https://github.com/DecimalAt/decimal_sdk/blob/478694d/src/operators/Request.ts#L10)
 
-___
+---
 
 ### varName
 
@@ -63,4 +63,4 @@ ___
 
 #### Defined in
 
-[operators/Base.ts:5](https://github.com/DecimalAt/decimal_sdk/blob/6ba5e75/src/operators/Base.ts#L5)
+[operators/Base.ts:5](https://github.com/DecimalAt/decimal_sdk/blob/478694d/src/operators/Base.ts#L5)

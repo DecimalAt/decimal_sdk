@@ -29,9 +29,9 @@ This is used for operation on multiple data points at same time
 
 #### Defined in
 
-[operators/Stats.ts:12](https://github.com/DecimalAt/decimal_sdk/blob/6ba5e75/src/operators/Stats.ts#L12)
+[operators/Stats.ts:12](https://github.com/DecimalAt/decimal_sdk/blob/478694d/src/operators/Stats.ts#L12)
 
-___
+---
 
 ### varName
 
@@ -43,9 +43,9 @@ ___
 
 #### Defined in
 
-[operators/Base.ts:5](https://github.com/DecimalAt/decimal_sdk/blob/6ba5e75/src/operators/Base.ts#L5)
+[operators/Base.ts:5](https://github.com/DecimalAt/decimal_sdk/blob/478694d/src/operators/Base.ts#L5)
 
-___
+---
 
 ### vars
 
@@ -53,4 +53,4 @@ ___
 
 #### Defined in
 
-[operators/Stats.ts:13](https://github.com/DecimalAt/decimal_sdk/blob/6ba5e75/src/operators/Stats.ts#L13)
+[operators/Stats.ts:13](https://github.com/DecimalAt/decimal_sdk/blob/478694d/src/operators/Stats.ts#L13)

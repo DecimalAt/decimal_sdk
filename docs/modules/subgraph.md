@@ -29,7 +29,7 @@ All pre-defined queries
 
 #### Defined in
 
-[subgraph/index.ts:69](https://github.com/DecimalAt/decimal_sdk/blob/6ba5e75/src/subgraph/index.ts#L69)
+[subgraph/index.ts:69](https://github.com/DecimalAt/decimal_sdk/blob/478694d/src/subgraph/index.ts#L69)
 
 ## Functions
 
@@ -41,10 +41,10 @@ Get all executions
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `first` | `number` | number of executions to fetch |
-| `skip` | `number` | number of executions to skip (pagination) |
+| Name    | Type     | Description                               |
+| :------ | :------- | :---------------------------------------- |
+| `first` | `number` | number of executions to fetch             |
+| `skip`  | `number` | number of executions to skip (pagination) |
 
 #### Returns
 
@@ -54,9 +54,9 @@ Execution - List of Executions
 
 #### Defined in
 
-[subgraph/index.ts:56](https://github.com/DecimalAt/decimal_sdk/blob/6ba5e75/src/subgraph/index.ts#L56)
+[subgraph/index.ts:56](https://github.com/DecimalAt/decimal_sdk/blob/478694d/src/subgraph/index.ts#L56)
 
-___
+---
 
 ### getJobs
 
@@ -66,10 +66,10 @@ Get all available jobs
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `first` | `number` | number of jobs to fetch |
-| `skip` | `number` | number of jobs to skip (pagination) |
+| Name    | Type     | Description                         |
+| :------ | :------- | :---------------------------------- |
+| `first` | `number` | number of jobs to fetch             |
+| `skip`  | `number` | number of jobs to skip (pagination) |
 
 #### Returns
 
@@ -79,9 +79,9 @@ Jobs - List of Jobs
 
 #### Defined in
 
-[subgraph/index.ts:42](https://github.com/DecimalAt/decimal_sdk/blob/6ba5e75/src/subgraph/index.ts#L42)
+[subgraph/index.ts:42](https://github.com/DecimalAt/decimal_sdk/blob/478694d/src/subgraph/index.ts#L42)
 
-___
+---
 
 ### name
 
@@ -93,9 +93,9 @@ ___
 
 #### Defined in
 
-[subgraph/index.ts:4](https://github.com/DecimalAt/decimal_sdk/blob/6ba5e75/src/subgraph/index.ts#L4)
+[subgraph/index.ts:4](https://github.com/DecimalAt/decimal_sdk/blob/478694d/src/subgraph/index.ts#L4)
 
-___
+---
 
 ### queryData
 
@@ -105,9 +105,9 @@ Execute a graphql query
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `query` | `string` | query |
+| Name    | Type     | Description |
+| :------ | :------- | :---------- |
+| `query` | `string` | query       |
 
 #### Returns
 
@@ -117,4 +117,4 @@ result
 
 #### Defined in
 
-[subgraph/index.ts:18](https://github.com/DecimalAt/decimal_sdk/blob/6ba5e75/src/subgraph/index.ts#L18)
+[subgraph/index.ts:18](https://github.com/DecimalAt/decimal_sdk/blob/478694d/src/subgraph/index.ts#L18)
