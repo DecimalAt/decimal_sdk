@@ -25,9 +25,11 @@
 
 • `Const` **queries**: `__module` = `query`
 
+All pre-defined queries
+
 #### Defined in
 
-[subgraph/index.ts:56](https://github.com/DecimalAt/decimal_sdk/blob/520d9e3/src/subgraph/index.ts#L56)
+[subgraph/index.ts:69](https://github.com/DecimalAt/decimal_sdk/blob/6ba5e75/src/subgraph/index.ts#L69)
 
 ## Functions
 
@@ -35,20 +37,24 @@
 
 ▸ **getExecutions**(`first`, `skip`): `Promise`<`Execution`[]\>
 
+Get all executions
+
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `first` | `number` |
-| `skip` | `number` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `first` | `number` | number of executions to fetch |
+| `skip` | `number` | number of executions to skip (pagination) |
 
 #### Returns
 
 `Promise`<`Execution`[]\>
 
+Execution - List of Executions
+
 #### Defined in
 
-[subgraph/index.ts:46](https://github.com/DecimalAt/decimal_sdk/blob/520d9e3/src/subgraph/index.ts#L46)
+[subgraph/index.ts:56](https://github.com/DecimalAt/decimal_sdk/blob/6ba5e75/src/subgraph/index.ts#L56)
 
 ___
 
@@ -56,20 +62,24 @@ ___
 
 ▸ **getJobs**(`first`, `skip`): `Promise`<`Job`[]\>
 
+Get all available jobs
+
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `first` | `number` |
-| `skip` | `number` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `first` | `number` | number of jobs to fetch |
+| `skip` | `number` | number of jobs to skip (pagination) |
 
 #### Returns
 
 `Promise`<`Job`[]\>
 
+Jobs - List of Jobs
+
 #### Defined in
 
-[subgraph/index.ts:38](https://github.com/DecimalAt/decimal_sdk/blob/520d9e3/src/subgraph/index.ts#L38)
+[subgraph/index.ts:42](https://github.com/DecimalAt/decimal_sdk/blob/6ba5e75/src/subgraph/index.ts#L42)
 
 ___
 
@@ -83,7 +93,7 @@ ___
 
 #### Defined in
 
-[subgraph/index.ts:11](https://github.com/DecimalAt/decimal_sdk/blob/520d9e3/src/subgraph/index.ts#L11)
+[subgraph/index.ts:4](https://github.com/DecimalAt/decimal_sdk/blob/6ba5e75/src/subgraph/index.ts#L4)
 
 ___
 
@@ -91,16 +101,20 @@ ___
 
 ▸ **queryData**(`query`): `Promise`<`any`\>
 
+Execute a graphql query
+
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `query` | `string` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `query` | `string` | query |
 
 #### Returns
 
 `Promise`<`any`\>
 
+result
+
 #### Defined in
 
-[subgraph/index.ts:20](https://github.com/DecimalAt/decimal_sdk/blob/520d9e3/src/subgraph/index.ts#L20)
+[subgraph/index.ts:18](https://github.com/DecimalAt/decimal_sdk/blob/6ba5e75/src/subgraph/index.ts#L18)

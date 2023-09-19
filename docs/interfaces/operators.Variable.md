@@ -34,4 +34,4 @@ Represent the name of the Variable
 
 #### Defined in
 
-[operators/Base.ts:5](https://github.com/DecimalAt/decimal_sdk/blob/520d9e3/src/operators/Base.ts#L5)
+[operators/Base.ts:5](https://github.com/DecimalAt/decimal_sdk/blob/6ba5e75/src/operators/Base.ts#L5)

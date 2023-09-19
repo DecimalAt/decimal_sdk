@@ -29,7 +29,7 @@ Represents Math Operation
 
 #### Defined in
 
-[operators/Math.ts:11](https://github.com/DecimalAt/decimal_sdk/blob/520d9e3/src/operators/Math.ts#L11)
+[operators/Math.ts:11](https://github.com/DecimalAt/decimal_sdk/blob/6ba5e75/src/operators/Math.ts#L11)
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 #### Defined in
 
-[operators/Math.ts:12](https://github.com/DecimalAt/decimal_sdk/blob/520d9e3/src/operators/Math.ts#L12)
+[operators/Math.ts:12](https://github.com/DecimalAt/decimal_sdk/blob/6ba5e75/src/operators/Math.ts#L12)
 
 ___
 
@@ -49,7 +49,7 @@ ___
 
 #### Defined in
 
-[operators/Math.ts:10](https://github.com/DecimalAt/decimal_sdk/blob/520d9e3/src/operators/Math.ts#L10)
+[operators/Math.ts:10](https://github.com/DecimalAt/decimal_sdk/blob/6ba5e75/src/operators/Math.ts#L10)
 
 ___
 
@@ -63,4 +63,4 @@ ___
 
 #### Defined in
 
-[operators/Base.ts:5](https://github.com/DecimalAt/decimal_sdk/blob/520d9e3/src/operators/Base.ts#L5)
+[operators/Base.ts:5](https://github.com/DecimalAt/decimal_sdk/blob/6ba5e75/src/operators/Base.ts#L5)

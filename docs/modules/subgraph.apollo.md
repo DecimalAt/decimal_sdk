@@ -23,7 +23,7 @@
 
 #### Defined in
 
-[subgraph/apollo.ts:13](https://github.com/DecimalAt/decimal_sdk/blob/520d9e3/src/subgraph/apollo.ts#L13)
+[subgraph/apollo.ts:13](https://github.com/DecimalAt/decimal_sdk/blob/6ba5e75/src/subgraph/apollo.ts#L13)
 
 ## Functions
 
@@ -45,7 +45,7 @@
 
 #### Defined in
 
-[subgraph/apollo.ts:35](https://github.com/DecimalAt/decimal_sdk/blob/520d9e3/src/subgraph/apollo.ts#L35)
+[subgraph/apollo.ts:35](https://github.com/DecimalAt/decimal_sdk/blob/6ba5e75/src/subgraph/apollo.ts#L35)
 
 ___
 
@@ -67,4 +67,4 @@ ___
 
 #### Defined in
 
-[subgraph/apollo.ts:22](https://github.com/DecimalAt/decimal_sdk/blob/520d9e3/src/subgraph/apollo.ts#L22)
+[subgraph/apollo.ts:22](https://github.com/DecimalAt/decimal_sdk/blob/6ba5e75/src/subgraph/apollo.ts#L22)

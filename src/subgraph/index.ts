@@ -1,12 +1,5 @@
 import fetch from "cross-fetch";
-import {
-  JobStatus,
-  type Job,
-  Execution,
-  JobType,
-  Network,
-  Param,
-} from "./types";
+import { type Job, Execution } from "./types";
 
 export const name = (): string => {
   return "Subgraph";
@@ -17,6 +10,11 @@ export * as apollo from "./apollo";
 
 import { convertToExecution, convertToJob } from "./helper";
 
+/**
+ * Execute a graphql query
+ * @param query - query
+ * @returns result
+ */
 export async function queryData(query: string): Promise<any> {
   const endPoint =
     "https://api.thegraph.com/subgraphs/name/decimalat/decimal-testnet";
@@ -35,6 +33,12 @@ export async function queryData(query: string): Promise<any> {
   return data;
 }
 
+/**
+ * Get all available jobs
+ * @param first - number of jobs to fetch
+ * @param skip - number of jobs to skip (pagination)
+ * @return Jobs - List of Jobs
+ */
 export async function getJobs(first: number, skip: number): Promise<Job[]> {
   const result = await queryData(query.getJobs(first, skip));
 
@@ -43,6 +47,12 @@ export async function getJobs(first: number, skip: number): Promise<Job[]> {
   return convertToJob(data);
 }
 
+/**
+ * Get all executions
+ * @param first - number of executions to fetch
+ * @param skip - number of executions to skip (pagination)
+ * @return Execution - List of Executions
+ */
 export async function getExecutions(
   first: number,
   skip: number,
@@ -53,4 +63,7 @@ export async function getExecutions(
   return convertToExecution(data);
 }
 
+/**
+ * All pre-defined queries
+ */
 export const queries = query;

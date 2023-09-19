@@ -20,4 +20,4 @@
 
 #### Defined in
 
-[executor/index.ts:1](https://github.com/DecimalAt/decimal_sdk/blob/520d9e3/src/executor/index.ts#L1)
+[executor/index.ts:1](https://github.com/DecimalAt/decimal_sdk/blob/6ba5e75/src/executor/index.ts#L1)

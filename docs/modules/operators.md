@@ -29,4 +29,4 @@
 
 #### Defined in
 
-[operators/index.ts:7](https://github.com/DecimalAt/decimal_sdk/blob/520d9e3/src/operators/index.ts#L7)
+[operators/index.ts:7](https://github.com/DecimalAt/decimal_sdk/blob/6ba5e75/src/operators/index.ts#L7)
