@@ -1,5 +1,3 @@
-import { BigNumberish } from "ethers";
-
 import {
   StatOperation,
   MathOperation,
@@ -21,6 +19,9 @@ type operation =
   | RandData
   | RequestOperation;
 
+/**
+ * Represent Builder, which is used to create a Job
+ */
 export class Builder {
   private operations: operation[] = [];
 
@@ -30,6 +31,10 @@ export class Builder {
     this.varMap = new Map();
   }
 
+  /**
+   * Add a new operation to the Job
+   * @returns Builder - Instance of the builder
+   */
   addOperation(op: operation): Builder {
     if (this.varMap.has(op.varName)) {
       throw new Error(`${op.varName} already exists`);
@@ -40,6 +45,10 @@ export class Builder {
     return this;
   }
 
+  /**
+   * Builds the complete operation
+   * @returns operations - Complete operation sequence
+   */
   build(): operation[] {
     return this.operations;
   }

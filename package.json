@@ -6,7 +6,8 @@
   "scripts": {
     "build": "rm -rf dist && npx tsc",
     "test": "ts-mocha test/**",
-    "prettier": "npx prettier --write ."
+    "prettier": "npx prettier --write .",
+    "typedoc": "rm -rf docs && typedoc --out docs ./src/index.ts"
   },
   "keywords": [],
   "author": "",
@@ -21,6 +22,7 @@
     "prettier": "^3.0.3",
     "ts-mocha": "^10.0.0",
     "ts-node": "^10.9.1",
+    "typedoc": "^0.25.1",
     "typescript": "^5.2.2"
   },
   "dependencies": {

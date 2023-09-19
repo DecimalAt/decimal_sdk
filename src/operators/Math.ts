@@ -3,6 +3,9 @@ import { Variable } from "./Base";
 
 type OperationType = "Add" | "Sub" | "Mul" | "Div" | "Pow";
 
+/**
+ * Represents Math Operation
+ */
 export interface MathOperation extends Variable {
   operation: OperationType;
   a: Variable | BigNumberish;
