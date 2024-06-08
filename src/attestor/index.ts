@@ -6,6 +6,12 @@ interface AttestationResponse {
   secp_key: BytesLike;
 }
 
+interface PCRS {
+  PCR0: BytesLike;
+  PCR1: BytesLike;
+  PCR2: BytesLike;
+}
+
 export class Attestor {
   protected attestation_utility_endpoint: string;
   protected attestation_verifier_endpoint: string;
@@ -114,6 +120,17 @@ export class Attestor {
       [decoded[2], decoded[3], decoded[4]],
     );
     return encoded;
+  }
+
+  public static getPCRsFromAttestation(attestationData: BytesLike): PCRS {
+    let abiCoder = new ethers.AbiCoder();
+    let decoded = abiCoder.decode(
+      ["bytes", "bytes", "bytes", "bytes", "bytes", "uint256"],
+      attestationData,
+    );
+    console.log("pcrs", decoded[2], decoded[3], decoded[4]);
+
+    return { PCR0: decoded[2], PCR1: decoded[3], PCR2: decoded[4] };
   }
 
   public static getImageIdFromAttestation(
