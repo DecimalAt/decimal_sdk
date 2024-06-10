@@ -46,8 +46,14 @@ export class Attestor {
       body: attestation_build_data,
     };
 
+    let verify_attestation_url = this.baseUrl(
+      this.attestation_verifier_endpoint,
+      "/verify/raw",
+    );
+
+    console.log("Verifying attestation Against: ", verify_attestation_url);
     let attestation_verifier_response = await fetch(
-      this.baseUrl(this.attestation_verifier_endpoint, "/verify/raw"),
+      verify_attestation_url,
       verify_attestation_config,
     );
     if (!attestation_verifier_response.ok) {
@@ -90,6 +96,7 @@ export class Attestor {
 
   private async buildAttestation(): Promise<any> {
     const attestation_end_point = this.utilityUrl("/attestation/raw");
+    console.log("Building Attestation From:", attestation_end_point);
     let attestation_build_config = {
       method: "GET",
     };
